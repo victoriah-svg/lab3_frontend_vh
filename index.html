@@ -1,28 +1,94 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Startsida</title>
-    <link rel="stylesheet" href="/src/CSS/main.scss">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Startsida</a></li>
-          <li><a href="/about">Om Sass</a></li>
-          <li><a href="#">Menyval 3</a></li>
-          <li><a href="#">Menyval 4</a></li>
-          <li><a href="#">Menyval 5</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Startsida</h1>
-    
-    </main>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startsida</title>
+  <link rel="stylesheet" href="/src/CSS/main.scss">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Startsida</a></li>
+        <li><a href="/about">Om Sass</a></li>
+        <li><a href="#">Menyval 3</a></li>
+        <li><a href="#">Menyval 4</a></li>
+        <li><a href="#">Menyval 5</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>En weekend i Strasbourg</h1>
+
+    <section id="cathedralSection">
+      <h2>Katedral Notre-Dame</h2>
+      <!--Bild 1 katedral-->
+      <picture id="bild1-container">
+        <source type="image/webp" srcset="/images/cathedral_1000.webp 1000w,
+                    /images/cathedral_500.webp 500w" sizes="(min-width: 1025px) 500px,
+                    (min-width: 600px) 500px,
+                    300px">
+
+        <source type="image/jpeg" srcset="/images/cathedral_1000.jpp 1000w,
+                    /images/cathedral_500.jpp 500w" sizes="(min-width: 1025px) 500px,
+                    (min-width: 600px) 500px,
+                    300px">
+
+        <img src="/images/cathedral_500.jpg" alt="Katedralen i centrala Strasbourg">
+      </picture>
+      <p>I Strasbourgs stadskärna finns den frekvent besökta katedralen Notre-Dame som är en av Frankrikes mest besökta. 
+        Den gotiska byggnaden är upplyst på kvällen och turister samlas för att fota rosettfönstret ovanför entré-porten. 
+      </p>
+    </section>
+
+    <section id="streetSection">
+      <h2>Petite France</h2>
+      <!--Bild 2 gata-->
+      <picture id="bild2-container">
+        <source type="image/webp" srcset="/images/street_1000.webp 1000w,
+                    /images/street_500.webp 500w" sizes="(min-width: 1025px) 500px,
+                    (min-width: 600px) 500px,
+                    300px">
+
+        <source type="image/jpeg" srcset="/images/street_1000.jpp 1000w,
+                    /images/street_500.jpp 500w" sizes="(min-width: 1025px) 500px,
+                    (min-width: 600px) 500px,
+                    300px">
+
+        <img src="/images/street_500.jpg" alt="Katedralen i centrala Strasbourg">
+      </picture>
+      <p>Stadsdelen Petite France är en äldre del av Strasbourg där snäva kullerstensgator tar sig fram mellan korsvirkeshus. Här finns många 
+        restauranger där typisk mat och dryck från Alsace kan avnjutas. </p>
+    </section>
+
+    <section id="dessertSection">
+      <h2>Pâttiserie-stop</h2>
+      <!--Bild 3 dessert-->
+      <picture id="bild3-container">
+        <source type="image/webp" srcset="/images/dessert_1000.webp 1000w,
+                    /images/dessert_500.webp 500w" sizes="(min-width: 1025px) 500px,
+                    (min-width: 600px) 500px,
+                    300px">
+
+        <source type="image/jpeg" srcset="/images/dessert_1000.jpp 1000w,
+                    /images/dessert_500.jpp 500w" sizes="(min-width: 1025px) 500px,
+                    (min-width: 600px) 500px,
+                    300px">
+
+        <img src="/images/dessert_500.jpg" alt="Katedralen i centrala Strasbourg">
+      </picture>
+      <p>Efter en dag av turistande så behövs en fika-paus. Här testas en så kallad "chou" med hasselnöt och 
+        passionsfruktsfyllning. Mums!
+      </p>
+    </section>
+
+
+  </main>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
 </html>
