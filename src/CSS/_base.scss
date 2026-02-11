@@ -1,4 +1,6 @@
- @use "sass:color";
+
+/*variabler för färgscheman och colorfunktions*/
+@use "sass:color";
 $color-primary: #456268;
 $color-secondary: #C4A484;
 $color-complementary: color.complement(#456268);
@@ -6,24 +8,28 @@ $color-primary-lighter: color.scale(#456268, $lightness: 70%);
 $color-primary-desaturated: color.scale(#456268, $saturation: -50%);
 
 header {
-    background-color: $color-primary;
+    background-color: $color-primary-desaturated;
     color: #F5FBE6;
 }
 
 body {
-    background-color:  #faf8f2;
+    background-color:  #FCF8EC;
+    margin: 0 auto;
+    max-width: 1800px;
 }
 
 section {
-    background-color: $color-complementary;
+    background-color: $color-primary-desaturated;
     padding: 1rem;
     border-radius: 5px;
     margin: 1rem;
     color: #faf8f2;
+    
 }
 
 #photoWrapper{
-    background-color: $color-primary-desaturated;
+    background-color: $color-complementary ;
     padding: 1rem;
     width: 50%;
+    border-radius: 5px;
 }
