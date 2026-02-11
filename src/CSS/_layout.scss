@@ -114,7 +114,23 @@
 
      .nav-links{
         display: none;
+        flex-direction: column;
+        width: 100%;
      }
+
+      .topnav.responsive .nav-links {
+        display: flex;
+    }
+
+    .topnav.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+     .topnav.responsive nav {
+        order: 2;
+        
+    }
 
      #hamburger img {
         width: 100%;
