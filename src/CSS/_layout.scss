@@ -46,7 +46,10 @@
     gap: 1rem;
 }
 
-
+/*----Hamburgermeny----*/
+#hamburger {
+    display: none;
+}
 
 
  /*----Tabletläge----*/
@@ -103,6 +106,25 @@
      p {
          padding-left: 0.5rem;
      }
+
+     /*Hamburger*/
+     #hamburger{
+         display: block;
+     }
+
+     .nav-links{
+        display: none;
+     }
+
+     #hamburger img {
+        width: 100%;
+        max-width: 30px;
+    }
+
+    #logo {
+        font-size: 1.2rem;
+    }
+    
 
 
  }
