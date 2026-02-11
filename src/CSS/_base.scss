@@ -118,3 +118,10 @@ img {
     @extend %links-a;
     color: $color-primary;
 }
+
+#mainAbout p {
+    background-color: $color-primary;
+    color: $color-text-background;
+    padding: 1rem;
+    border-radius: 5px;
+}

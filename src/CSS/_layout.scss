@@ -129,7 +129,7 @@
 
      .topnav.responsive nav {
         order: 2;
-        
+        justify-self: end;
     }
 
      #hamburger img {
@@ -141,7 +141,10 @@
         font-size: 1.2rem;
     }
     
-
+    #mainAbout p {
+        width: 85%;
+        padding-right: 0.5rem;
+    }
 
  }
 
