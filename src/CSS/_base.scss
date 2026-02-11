@@ -112,3 +112,9 @@ img {
 #aboutImage {
     @include box-size(150px, 500px, true);
 }
+
+#logo {
+    font-size: 2rem;
+    @extend %links-a;
+    color: $color-primary;
+}

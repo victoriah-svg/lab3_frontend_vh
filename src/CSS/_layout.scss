@@ -46,6 +46,10 @@ section {
     header {
         background-color: base.$color-dark-header;
     }
+
+    #logo {
+        color: base.$color-text-background;
+    }
 }
 
 /*----Tabletläge----*/
