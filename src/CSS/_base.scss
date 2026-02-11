@@ -1,9 +1,7 @@
 /*variabler för färgscheman och colorfunktions*/
 @use "sass:color";
 $color-primary: #456268;
-$color-secondary: #C4A484;
 $color-complementary: color.complement(#456268);
-$color-primary-lighter: color.scale(#456268, $lightness: 70%);
 $color-primary-desaturated: color.scale(#456268, $saturation: -50%);
 $color-text-background: #FCF8F3;
 $color-tertiary: color.scale(#A8BBA3, $saturation: -70%);
