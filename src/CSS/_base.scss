@@ -7,6 +7,8 @@ $color-primary-lighter: color.scale(#456268, $lightness: 70%);
 $color-primary-desaturated: color.scale(#456268, $saturation: -50%);
 $color-text-background: #FCF8F3;
 $color-tertiary: color.scale(#A8BBA3, $saturation: -70%);
+$color-dark-background: color.scale($color-primary, $lightness: -70%);
+$color-dark-header: color.scale(#F66B0E, $saturation: -40%);
 
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Fjalla+One&display=swap');

@@ -1,3 +1,5 @@
+ @use "base";
+
 /*----Desktopläge----*/
 body {
     display: grid;
@@ -15,12 +17,35 @@ p {
     justify-self: center;
 }
 
+section {
+        display: grid;
+        justify-items: center;
+
+        p {
+            padding-left: 0.5rem;
+        }
+    }
+
+
 
 
 #aboutImage {
     display: block;
     justify-self: center;
     padding: 1rem 5rem 1rem 5rem;
+}
+
+
+/*----Mörkt läge----*/
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: base.$color-dark-background;
+        color: base.$color-text-background;
+    }
+
+    header {
+        background-color: base.$color-dark-header;
+    }
 }
 
 /*----Tabletläge----*/
