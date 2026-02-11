@@ -1,0 +1,11 @@
+
+/*navlänkar*/
+    @use "base";
+
+    ul {
+        @extend %links-ul;
+        a {
+            @extend %links-a;
+            color: base.$color-text-background;
+        }
+    }

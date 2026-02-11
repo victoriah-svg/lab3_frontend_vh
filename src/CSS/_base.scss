@@ -1,4 +1,3 @@
-
 /*variabler för färgscheman och colorfunktions*/
 @use "sass:color";
 $color-primary: #456268;
@@ -6,16 +5,75 @@ $color-secondary: #C4A484;
 $color-complementary: color.complement(#456268);
 $color-primary-lighter: color.scale(#456268, $lightness: 70%);
 $color-primary-desaturated: color.scale(#456268, $saturation: -50%);
+$color-text-background: #FCF8F3;
+$color-tertiary: color.scale(#A8BBA3, $saturation: -70%);
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Fjalla+One&display=swap');
+
+/*variabler för fonter*/
+$font-stack-headings: "Fjalla One", Impact, Arial, sans-serif;
+$font-stack-text: "Roboto", Arial, Helvetica, sans-serif;
+
+/* mixin för boxar runt bilder och för bilder */
+@mixin box-size ($size, $maxwidth, $circle) {
+    
+    max-width: $maxwidth;
+
+     @if $circle {
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+    }
+
+    @else {
+        width: $size;
+        border-radius: 5px;
+    }
+    
+}
+
+/*placeholder för radhöjd och fontsize*/
+%text-styling {
+    line-height: 1.6rem;
+    max-width: 65ch;
+}
+
+/*placeholder ul*/
+%links-ul {
+    list-style: none;
+}
+
+/*placeholder länkar*/
+%links-a {
+    text-decoration: none;
+}
+
+
+
+h1,
+h2,
+a {
+    font-family: $font-stack-headings;
+    @extend %text-styling;
+}
+
+p {
+    font-family: $font-stack-text;
+    @extend %text-styling;
+}
 
 header {
-    background-color: $color-primary-desaturated;
-    color: #F5FBE6;
+    background-color: $color-tertiary;
+
 }
 
 body {
-    background-color:  #FCF8EC;
+    background-color: $color-text-background;
     margin: 0 auto;
     max-width: 1800px;
+    min-height: 100vh;
+
 }
 
 section {
@@ -24,12 +82,27 @@ section {
     border-radius: 5px;
     margin: 1rem;
     color: #faf8f2;
-    
+
 }
 
-#photoWrapper{
+#photoWrapper {
+    @include box-size(100%, 600px, false);
     background-color: $color-complementary ;
-    padding: 1rem;
-    width: 50%;
-    border-radius: 5px;
+    padding: 0.5rem;
+
+    h2 {
+        color: $color-text-background;
+    }
+
+    p {
+        color: $color-text-background;
+    }
+}
+
+img {
+    @include box-size (100%, 500px, false);
+}
+
+#aboutImage {
+    @include box-size(150px, 500px, true);
 }
