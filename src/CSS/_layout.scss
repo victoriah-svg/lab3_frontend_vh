@@ -1,4 +1,5 @@
  @use "base";
+ @use "keyframes";
 
  /*----Desktopläge----*/
  body {
@@ -41,6 +42,22 @@
  #smallPic4 {
      @extend %opacity-none; 
      width: 100px;
+ }
+
+ #smallPic1 {
+     animation: pictureTransform 5s linear 1s 1 forwards;
+ }
+
+ #smallPic2 {
+    animation: pictureTransform2 5s linear 2s 1 forwards;
+ }
+
+ #smallPic3 {
+    animation: pictureTransform3 5s linear 3s 1 forwards;
+ }
+
+ #smallPic4 {
+    animation: pictureTransform4 5s linear 4s 1 forwards;
  }
 
 
