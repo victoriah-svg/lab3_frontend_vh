@@ -36,14 +36,14 @@
 
  /*Bilder animeringssidan*/
 
- #smallPic1,
- #smallPic2,
- #smallPic3,
- #smallPic4 {
+ .smallPictures {
+    padding: 1rem;
+    transition: 1s ease;
      @extend %opacity-none; 
      width: 100px;
  }
 
+ 
  #smallPic1 {
      animation: pictureTransform 5s linear 1s 1 forwards;
  }
@@ -59,6 +59,14 @@
  #smallPic4 {
     animation: pictureTransform4 5s linear 4s 1 forwards;
  }
+
+.smallPictures:hover {
+    
+    width: 200px;
+    border-radius: 5px;
+    
+ }
+
 
 
 
