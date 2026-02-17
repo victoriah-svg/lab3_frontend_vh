@@ -33,6 +33,18 @@
      padding: 1rem 5rem 1rem 5rem;
  }
 
+ /*Bilder animeringssidan*/
+
+ #smallPic1,
+ #smallPic2,
+ #smallPic3,
+ #smallPic4 {
+     @extend %opacity-none; 
+     width: 100px;
+ }
+
+
+
  /*----Header----*/
  .topnav {
     display: flex;

@@ -15,6 +15,7 @@ $color-dark-header: color.scale(#F66B0E, $saturation: -40%);
 $font-stack-headings: "Fjalla One", Impact, Arial, sans-serif;
 $font-stack-text: "Roboto", Arial, Helvetica, sans-serif;
 
+
 /* mixin för boxar runt bilder och för bilder */
 @mixin box-size ($size, $maxwidth, $circle) {
     
@@ -31,6 +32,11 @@ $font-stack-text: "Roboto", Arial, Helvetica, sans-serif;
         border-radius: 5px;
     }
     
+}
+
+/*placeholder för opacitet*/
+%opacity-none {
+    opacity: 0;
 }
 
 /*placeholder för radhöjd och fontsize*/
@@ -103,7 +109,7 @@ section {
     }
 }
 
-img {
+.imgStart {
     @include box-size (100%, 500px, false);
 }
 
