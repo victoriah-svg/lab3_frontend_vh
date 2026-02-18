@@ -11,7 +11,15 @@ ul {
 
     a:hover {
         text-shadow: 2px 2px 10px rgb(127, 31, 191);
+        }
+
+    a:active {
+        text-shadow: 5px 5px 30px rgb(127, 31, 191);
     }
+}
+
+.active {
+    color: rgb(127, 31, 191);
 }
 
 #styleBtn {
