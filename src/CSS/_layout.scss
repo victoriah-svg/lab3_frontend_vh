@@ -41,11 +41,12 @@
     transition: 1s ease;
      @extend %opacity-none; 
      width: 100px;
+     
  }
 
  
  #smallPic1 {
-     animation: pictureTransform 5s linear 1s 1 forwards;
+     animation: pictureTransform 5s linear 1s 1 forwards, stylePics 5s linear 1s infinite forwards paused;
      
  }
 
@@ -69,12 +70,13 @@
 
  /*Heading animeringssidan*/
  #animationHeading {
-    animation: style 10s linear infinite paused;
+    animation: style 10s linear infinite paused, scale 5s alternate infinite  none paused;
  }
 
  /*StyleBtn*/
 #styleBtn{
-    animation: style 10s linear infinite paused;
+    opacity: 0;
+    animation: style 10s linear infinite none paused, pictureTransform 5s linear 1s 1 forwards, ;
 }
 
 

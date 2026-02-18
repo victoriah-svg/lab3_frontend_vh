@@ -12,7 +12,7 @@
     100% {
        transform: translate(50px, 0px);
        opacity: 0.8;
-       border-radius: 20px;
+       
     }
 }
 
@@ -28,7 +28,7 @@
     100% {
        transform: translate(100px, 0px);
         opacity: 0.8;
-        border-radius: 20px;
+        
     }
 }
 
@@ -44,7 +44,7 @@
     100% {
         opacity: 0.8;
        transform: translate(150px, 0px);
-       border-radius: 20px;
+    
     }
 }
 
@@ -60,7 +60,7 @@
     100% {
         opacity: 0.8;
        transform: translate(200px, 0px);
-       border-radius: 20px;
+      
     }
 }
 
@@ -99,4 +99,13 @@
         -2px -2px 60px yellow;
     }
 
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+       transform: scale(1.5, 1.5);
+    }
 }
