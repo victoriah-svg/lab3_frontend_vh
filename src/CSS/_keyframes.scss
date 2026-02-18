@@ -1,3 +1,5 @@
+@use "base";
+
 @keyframes pictureTransform {
     0%{
         transform: translate(0px, 0px);
@@ -60,4 +62,41 @@
        transform: translate(200px, 0px);
        border-radius: 20px;
     }
+}
+
+@keyframes style {
+    0% {
+        text-shadow: 0 0 0px ;
+        
+    }
+
+    20% {
+        text-shadow: 
+        2px 2px 60px rgb(162, 83, 214),
+        2px -2px 60px rgb(162, 83, 214),
+        -2px -2px 60px rgb(162, 83, 214);
+        
+    }
+    30% {
+         text-shadow: 0 0 0px ;
+    }
+
+    50% {
+        text-shadow: 
+         2px 2px 60px orange,
+        2px -2px 60px orange,
+        -2px -2px 60px orange;
+    }
+
+    60% {
+        text-shadow: 0 0 0px ;
+    }
+    
+    80% {
+         text-shadow: 
+         2px 2px 60px yellow,
+        2px -2px 60px yellow,
+        -2px -2px 60px yellow;
+    }
+
 }

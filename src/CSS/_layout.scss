@@ -46,6 +46,7 @@
  
  #smallPic1 {
      animation: pictureTransform 5s linear 1s 1 forwards;
+     
  }
 
  #smallPic2 {
@@ -64,9 +65,17 @@
     
     width: 200px;
     
-    
  }
 
+ /*Heading animeringssidan*/
+ #animationHeading {
+    animation: style 10s linear infinite paused;
+ }
+
+ /*StyleBtn*/
+#styleBtn{
+    animation: style 10s linear infinite paused;
+}
 
 
 

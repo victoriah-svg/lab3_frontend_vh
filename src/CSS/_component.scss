@@ -8,6 +8,10 @@ ul {
         @extend %links-a;
         color: base.$color-text-background;
     }
+
+    a:hover {
+        text-shadow: 2px 2px 10px rgb(127, 31, 191);
+    }
 }
 
 #styleBtn {
@@ -18,7 +22,6 @@ ul {
     display: block;
     font-family: base.$font-stack-headings;
     background-color: rgb(172, 110, 213); 
-    
     margin: 1rem;
 }
 
