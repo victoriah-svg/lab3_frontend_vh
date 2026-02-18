@@ -14,4 +14,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 }
                 console.log(nav.className);
     });
+
+    
 })

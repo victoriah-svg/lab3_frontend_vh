@@ -1,13 +1,28 @@
-
 /*navlänkar*/
-    @use "base";
+@use "base";
 
-    ul {
-        @extend %links-ul;
-        a {
-            @extend %links-a;
-            color: base.$color-text-background;
-        }
+ul {
+    @extend %links-ul;
+
+    a {
+        @extend %links-a;
+        color: base.$color-text-background;
     }
+}
 
+#styleBtn {
+    padding: 0.5em 1em;
+    border-radius: 0.4rem;
+    border: 0.1px solid rgb(7, 7, 7); 
+    font-size: 1.25rem;
+    display: block;
+    font-family: base.$font-stack-headings;
+    background-color: rgb(172, 110, 213); 
     
+    margin: 1rem;
+}
+
+#styleBtn:hover {
+    box-shadow: 0 0 30px rgb(16, 6, 23);
+    cursor: pointer;
+}
