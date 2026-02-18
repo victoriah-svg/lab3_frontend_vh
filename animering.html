@@ -55,6 +55,21 @@
         <!--Knapp för styling-->
         <button type="submit" id="styleBtn">Add styling!</button>
 
+         <!--Bild 1 katedral-->
+        <picture id="windowPic-container">
+          <source type="image/webp" srcset="/images/window_1000.webp 1000w,
+                    /images/window_500.webp 500w" sizes="(min-width: 1025px) 500px,
+                    (min-width: 600px) 500px,
+                    300px">
+
+          <source type="image/jpeg" srcset="/images/window_1000.jpp 1000w,
+                    /images/window_500.jpp 500w" sizes="(min-width: 1025px) 500px,
+                    (min-width: 600px) 500px,
+                    300px">
+
+          <img src="/images/window_500.jpg" alt="Kyrkofönster, Katedralen i Strasbourg" id="windowPic">
+        </picture>
+
     </main>
     <script type="module" src="/src/js/main.js"></script>
 </body>

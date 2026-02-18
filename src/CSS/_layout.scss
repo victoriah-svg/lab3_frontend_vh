@@ -37,7 +37,7 @@
  /*Bilder animeringssidan*/
 
  .smallPictures {
-    padding: 1rem;
+    padding: 0.5rem;
     transition: 1s ease;
      @extend %opacity-none; 
      width: 100px;
@@ -46,7 +46,7 @@
 
  
  #smallPic1 {
-     animation: pictureTransform 5s linear 1s 1 forwards, stylePics 5s linear 1s infinite forwards paused;
+     animation: pictureTransform 5s linear 1s 1 forwards;
      
  }
 
@@ -66,6 +66,10 @@
     
     width: 200px;
     
+ }
+
+ #windowPic {
+     animation: pictureTransform 20s linear 1s 1 forwards;
  }
 
  /*Heading animeringssidan*/
@@ -188,6 +192,17 @@
     #logo {
         font-size: 1.2rem;
     }
+
+    #windowPic{
+         @include base.box-size (100%, 300px, false);
+    }
+
+    .smallPictures {
+    padding: 0.5rem;
+     width: 50px;
+     
+ }
+   
     
     #mainAbout p {
         width: 85%;

@@ -118,6 +118,11 @@ section {
     @include box-size(150px, 500px, true);
 }
 
+#windowPic {
+    @include box-size (100%, 500px, false);
+    @extend %opacity-none; 
+}
+
 #logo {
     font-size: 2rem;
     @extend %links-a;
