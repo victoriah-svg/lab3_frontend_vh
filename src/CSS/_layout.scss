@@ -76,7 +76,7 @@
  }
 
  #windowPic {
-     animation: pictureTransform 10s linear 1s 1 forwards, rotate 5s ease-in-out 3s infinite none paused, round 3s ease-in-out 1 forwards paused;
+     animation: pictureTransform 10s linear 1s 1 forwards, round 3s ease-in-out 1 forwards paused;
  }
 
  /*Heading animeringssidan*/
@@ -87,7 +87,7 @@
  /*StyleBtn*/
 #styleBtn{
     opacity: 0;
-    animation: style 10s linear infinite none paused, pictureTransform 5s linear 1s 1 forwards ;
+    animation: style 10s linear infinite none paused, pictureTransform 5s linear 1s 1 forwards;
 }
 
 

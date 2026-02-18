@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     styleBtn.addEventListener("click", stylePage);
 
     styleBtn.addEventListener("click", rotate);
+
 })
 
 /* styling av sidan när knapp klickas */
