@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const styleBtn = document.getElementById("styleBtn");
     styleBtn.addEventListener("click", stylePage);
 
-   // styleBtn.addEventListener("click", wiggle);
+    styleBtn.addEventListener("click", rotate);
 })
 
 /* styling av sidan när knapp klickas */
@@ -41,16 +41,16 @@ function stylePage() {
     }
 }
 
-/*function wiggle() {
+function rotate() {
     
-   const headingEl = document.getElementById("animationHeading");
+   const windowPic = document.getElementById("windowPic");
     
         if (
-            smallPic1.style.animationPlayState == "running"
+            windowPic.style.animationPlayState == "running"
         ) {
-            smallPic1.style.animationPlayState = "paused";
+            windowPic.style.animationPlayState = "paused";
         } else {
-            smallPic1.style.animationPlayState = "running";
+            windowPic.style.animationPlayState = "running";
         }
     
-}*/
+}

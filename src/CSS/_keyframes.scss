@@ -1,102 +1,111 @@
 @use "base";
 
 @keyframes pictureTransform {
-    0%{
+    0% {
         transform: translate(0px, 0px);
         border-radius: 0;
         opacity: 0;
     }
+
     50% {
         opacity: 0.5;
     }
+
     100% {
-       transform: translate(10px, 0px);
-       opacity: 0.8;
-       
+        transform: translate(10px, 0px);
+        opacity: 0.8;
+
     }
 }
 
 @keyframes pictureTransform2 {
-    0%{
+    0% {
         transform: translate(0px, 0px);
         border-radius: 0;
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
+
     100% {
-       transform: translate(20px, 0px);
+        transform: translate(20px, 0px);
         opacity: 0.8;
-        
+
     }
 }
 
 @keyframes pictureTransform3 {
-    0%{
+    0% {
         transform: translate(0px, 0px);
         border-radius: 0;
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
+
     100% {
         opacity: 0.8;
-       transform: translate(30px, 0px);
-    
+        transform: translate(30px, 0px);
+
     }
 }
 
 @keyframes pictureTransform4 {
-    0%{
+    0% {
         transform: translate(0px, 0px);
         border-radius: 0;
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
+
     100% {
         opacity: 0.8;
-       transform: translate(40px, 0px);
-      
+        transform: translate(40px, 0px);
+
     }
 }
 
 @keyframes style {
     0% {
-        text-shadow: 0 0 0px ;
-        
+        text-shadow: 0 0 0px;
+
     }
 
     20% {
-        text-shadow: 
-        2px 2px 60px rgb(162, 83, 214),
-        2px -2px 60px rgb(162, 83, 214),
-        -2px -2px 60px rgb(162, 83, 214);
-        
+        text-shadow:
+            2px 2px 60px rgb(162, 83, 214),
+            2px -2px 60px rgb(162, 83, 214),
+            -2px -2px 60px rgb(162, 83, 214);
+
     }
+
     30% {
-         text-shadow: 0 0 0px ;
+        text-shadow: 0 0 0px;
     }
 
     50% {
-        text-shadow: 
-         2px 2px 60px orange,
-        2px -2px 60px orange,
-        -2px -2px 60px orange;
+        text-shadow:
+            2px 2px 60px orange,
+            2px -2px 60px orange,
+            -2px -2px 60px orange;
     }
 
     60% {
-        text-shadow: 0 0 0px ;
+        text-shadow: 0 0 0px;
     }
-    
+
     80% {
-         text-shadow: 
-         2px 2px 60px yellow,
-        2px -2px 60px yellow,
-        -2px -2px 60px yellow;
+        text-shadow:
+            2px 2px 60px yellow,
+            2px -2px 60px yellow,
+            -2px -2px 60px yellow;
     }
 
 }
@@ -105,7 +114,35 @@
     from {
         transform: scale(1, 1);
     }
+
     to {
-       transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes round {
+    from {
+    border-radius: 5px;
+    }
+    to{
+    border-radius: 50%;
+    }
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+        
+       
+    }
+
+    50% {
+        transform: translate(0px, 300px) rotate(180deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(360deg);
+        
     }
 }
