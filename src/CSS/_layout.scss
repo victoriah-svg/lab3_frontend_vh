@@ -34,6 +34,13 @@
      padding: 1rem 5rem 1rem 5rem;
  }
 
+ /*Animeringssidan*/
+ #mainAnimering {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-items: center;
+ }
+
  /*Bilder animeringssidan*/
 
  .smallPictures {
@@ -194,11 +201,13 @@
     }
 
     #windowPic{
-         @include base.box-size (100%, 300px, false);
+         @include base.box-size (100%, 250px, false);
+         padding-left: 25px;
+       
     }
 
     .smallPictures {
-    padding: 0.5rem;
+    padding: 0.4rem;
      width: 50px;
      
  }
@@ -208,6 +217,19 @@
         width: 85%;
         padding-right: 0.5rem;
     }
+
+    /*storlek på main animeringssida*/
+    #mainAnimering {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /*Miniatyrbilder animeringssidan*/
+    .smallPictures:hover {
+    width: 70px;
+    
+ }
+
 
  }
 
@@ -225,4 +247,8 @@
      #logo {
          color: base.$color-text-background;
      }
+
+     #logo:hover {
+    text-shadow: 2px 2px 20px base.$color-text-background;
+}
  }

@@ -129,6 +129,10 @@ section {
     color: $color-primary;
 }
 
+#logo:hover {
+    text-shadow: 2px 2px 20px $color-primary;
+}
+
 #mainAbout p {
     background-color: $color-primary;
     color: $color-text-background;
